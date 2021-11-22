@@ -22,6 +22,7 @@ public class Main {
         int result=0;
         for (int a:arr)
              result +=a;
+        System.exit(0);
         return result;
     }
 

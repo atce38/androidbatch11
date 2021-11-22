@@ -26,7 +26,7 @@ public class ArrayClass extends login {
         System.out.println(string());
 
         Scanner scn=new Scanner(System.in);
-        
+
         float val=scn.nextFloat();
         System.out.println(val);
 
