@@ -28,7 +28,11 @@ public class Mainclass {
             System.out.println("Enter Student Name :");
             st.name = inp.nextLine();
             System.out.println("Enter Student Age :");
-            while (!inp.hasNextInt()||inp.nextInt()<0){
+            while (!inp.hasNextInt()
+//            App ny Yahan while() k andar NextInt Ly Liya hai naa is
+//            or neechy aap ny phir sy Int Ly liya is wajah sy problem hui thi
+//                    ||inp.nextInt()<0
+            ){
                 System.out.println("Only integer value Enter. Try Again :");
              inp.next();
             }
