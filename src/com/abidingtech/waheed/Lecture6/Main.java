@@ -16,7 +16,5 @@ public class Main {
         Student student1=new Student("Usama",23);
 //        student1.result();
         studentList.add(student1);
-
-
     }
 }
