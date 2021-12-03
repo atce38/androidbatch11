@@ -27,24 +27,23 @@ public class Mainclass {
             Student st = new Student();
             System.out.println("Enter Student Name :");
             st.name = inp.nextLine();
-
-            do {
-                System.out.println("Enter Student Age in positive :");
-                while (!inp.hasNextInt()) {
-                    System.out.println("Only integer value Enter. Try Again :");
-                    inp.next();
-                }
-                st.age = inp.nextInt();
-            }while (st.age<0);
-            inp.nextLine();
-            int no;
-            System.out.println("How many subjects you have :");
-            no=inp.nextInt();
-            inp.nextLine();
-            for (int i=0;i<no;i++){
-                System.out.println("Enter "+(i+1)+" subject :");
-                st.subjects.add(inp.nextLine());
+            System.out.println("Enter Student Age :");
+            while (!inp.hasNextInt()
+//            App ny Yahan while() k andar NextInt Ly Liya hai naa is
+//            or neechy aap ny phir sy Int Ly liya is wajah sy problem hui thi
+//                    ||inp.nextInt()<0
+            ){
+                System.out.println("Only integer value Enter. Try Again :");
+             inp.next();
             }
+            st.age = inp.nextInt();
+            inp.nextLine();
+            ArrayList<String> sub=new ArrayList<>();
+            sub.add("Bio");
+            sub.add("Bio");
+            sub.add("Bio");
+            sub.add("Bio");
+            st.subjects=sub;
             studentlist.add(st);
             creatObjects(a - 1);
         }
