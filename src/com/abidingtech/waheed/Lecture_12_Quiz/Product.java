@@ -6,7 +6,10 @@ public class Product {
     String name,category,details;
     boolean is_active;
 
-    public Product(int id,String name, String category, String details, int available_qty, double price,  boolean is_active) {
+    public Product() {
+    }
+
+    public Product(int id, String name, String category, String details, int available_qty, double price, boolean is_active) {
         this.id = id;
         this.available_qty = available_qty;
         this.price = price;
